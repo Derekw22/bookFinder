@@ -28,9 +28,14 @@ function findBook(){
             var author = document.createElement('p');
             author.innerHTML = "<b>Author:</b>   " + book.items[i].volumeInfo.authors;
             div.appendChild(author);
+            //
             var desc = document.createElement('p');
             desc.innerHTML = book.items[i].volumeInfo.description;
             div.appendChild(desc);
+            //
+            var pageCount = document.createElement('p');
+            pageCount.innerHTML = "<b>Page Count:</b>   " + book.items[i].volumeInfo.pageCount;
+            div.appendChild(pageCount);
             // line
             var line = document.createElement("hr"); 
             bookResult.appendChild(wrapperDiv);
